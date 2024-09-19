@@ -23,7 +23,7 @@ Check the web app: [WeatherNow](https://saifahmeed.github.io/WeatherNow/)
 
 1. Clone the repository:
 
-   `git clone https://github.com/YourUsername/WeatherNow.git` <!-- bash -->
+   `https://github.com/Saifahmeed/WeatherNow.git` <!-- bash -->
 
 2. Navigate to the project directory:
 
@@ -36,7 +36,7 @@ Check the web app: [WeatherNow](https://saifahmeed.github.io/WeatherNow/)
 
 1. Enter a country or city name in the search bar to get weather data for major cities in that country.
 2. The weather information will be dynamically displayed in a grid layout.
-3. Use the comparison tool to compare weather between two different places and view the differences in a clean, visual format.
+3. Use the comparison tool to compare the weather between two different places and view the differences in a clean, visual format.
 
 ## API Integration
 
