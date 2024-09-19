@@ -2,6 +2,7 @@
 
 **WeatherNow** is a web app that allows users to view real-time weather data for various cities based on country selection. Additionally, it features a tool to compare the weather between two places. The app leverages the OpenWeatherMap API to fetch current weather details and display them in a visually appealing format.
 
+Check the web app: [WeatherNow]((https://saifahmeed.github.io/WeatherNow/)) 
 ## Features
 
 - **Real-Time Weather Data**: View the latest weather details like temperature, humidity, and wind speed for selected cities.
@@ -30,7 +31,7 @@
 
 3. Open `index.html` in your preferred browser to run the app.
 
-Or you can just check my website: 
+
 ## Usage
 
 1. Enter a country or city name in the search bar to get weather data for major cities in that country.
