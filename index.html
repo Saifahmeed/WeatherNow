@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="logo-section">
+        <h1>WeatherNow</h1>
+      </div>
+      <!-- Search Section -->
+      <div class="search-section">
+        <h2>Search for Weather by Country or City</h2>
+        <div class="search-container">
+          <input
+            type="text"
+            id="countryInput"
+            placeholder="Enter a country..."
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+        <div class="weather-grid" id="weatherGrid">
+          <!-- Weather data will be displayed here -->
+        </div>
+        <div class="error-msg">Invalid country, please try again.</div>
+      </div>
+
+      <!-- Weather comparison tool -->
+      <div class="comparison-section">
+        <h3>Compare Weather Between Two Places</h3>
+        <div class="comparison-container">
+          <input
+            type="text"
+            id="place1Input"
+            placeholder="Enter first place..."
+          />
+          <input
+            type="text"
+            id="place2Input"
+            placeholder="Enter second place..."
+          />
+          <button id="compareBtn">Compare</button>
+        </div>
+        <div class="comparison-results" id="comparisonResults"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
