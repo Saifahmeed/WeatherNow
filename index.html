@@ -2,52 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Weather App</title>
+    <title>
+      WeatherNow - Your go-to web app for real-time weather updates and
+      comparisons
+    </title>
+    <link rel="stylesheet" href="landingpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="app-container">
-      <div class="logo-section">
-        <h1>WeatherNow</h1>
-      </div>
-      <!-- Search Section -->
-      <div class="search-section">
-        <h2>Search for Weather by Country or City</h2>
-        <div class="search-container">
-          <input
-            type="text"
-            id="countryInput"
-            placeholder="Enter a country..."
-          />
-          <button id="searchBtn">Search</button>
-        </div>
-        <div class="weather-grid" id="weatherGrid">
-          <!-- Weather data will be displayed here -->
-        </div>
-        <div class="error-msg">Invalid country, please try again.</div>
-      </div>
+    <header>
+      <nav>
+        <div class="logo">WeatherNow</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <a href="index2.html" class="cta">Launch App</a>
+      </nav>
+    </header>
 
-      <!-- Weather comparison tool -->
-      <div class="comparison-section">
-        <h3>Compare Weather Between Two Places</h3>
-        <div class="comparison-container">
-          <input
-            type="text"
-            id="place1Input"
-            placeholder="Enter first place..."
-          />
-          <input
-            type="text"
-            id="place2Input"
-            placeholder="Enter second place..."
-          />
-          <button id="compareBtn">Compare</button>
+    <main>
+      <section class="introo">
+        <div class="introo-content">
+          <h1>WeatherNow</h1>
+          <p>
+            Your go-to web app for real-time weather updates and comparisons
+          </p>
+          <a href="index2.html" class="introo-cta">Get Started</a>
         </div>
-        <div class="comparison-results" id="comparisonResults"></div>
-      </div>
-    </div>
+      </section>
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="features-container">
+          <div class="feature">
+            <img src="images/image1.png" alt="Check Country or City" />
+            <h3>Check Country or City</h3>
+            <p>
+              Quickly get real-time weather updates for any country or city.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="images/image2.png" alt="Compare Two Places" />
+            <h3>Compare Two Places</h3>
+            <p>
+              Easily compare weather conditions between two different locations.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <script src="app.js"></script>
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>About</h2>
+        <p>
+          The idea behind WeatherNow was sparked by a need for a simplified,
+          user-friendly weather app.
+        </p>
+        <p>
+          Inspired by the idea of helping travelers worldwide not only know the
+          weather of their destination but also compare it with the weather in
+          their current location, making it easier for them to plan accordingly.
+        </p>
+        <h3>Timeline</h3>
+        <ul class="timeline">
+          <li>
+            <h4>Idea Formation - 1 week</h4>
+            <p>
+              Conceptualized a weather app focused on real-time updates and
+              comparison tools.
+            </p>
+          </li>
+          <li>
+            <h4>Development & API Integration - 3 weeks</h4>
+            <p>
+              Built the core features and integrated OpenWeatherMap for live
+              data retrieval.
+            </p>
+          </li>
+          <li>
+            <h4>UI Refinement - 1 week</h4>
+            <p>
+              Enhanced the user interface for a clean, responsive design that
+              improves user experience.
+            </p>
+          </li>
+          <li>
+            <h4>Testing - 1 week</h4>
+            <p>
+              Conducted thorough testing to ensure accurate data and smooth
+              functionality.
+            </p>
+          </li>
+        </ul>
+        <p>This project is a Portfolio Project for Holberton School.</p>
+
+        <h3>Author</h3>
+        <p>Saif Abd Elfattah</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/saaif-ahmed/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Saifahmeed" target="_blank">GitHub</a>
+          <a href="https://github.com/Saifahmeed/WeatherNow" target="_blank"
+            >Project Repository</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 WeatherNow. All rights reserved.</p>
+    </footer>
   </body>
 </html>
