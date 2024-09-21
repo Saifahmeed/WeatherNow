@@ -4,6 +4,8 @@
 
 Check the web app: [WeatherNow](https://saifahmeed.github.io/WeatherNow/) 
 
+ALX presentation: [Slides](https://docs.google.com/presentation/d/1MwYiVpwLtJFmWRwr46w_0yXTtw-tzjv8Wc7VYqNkI28/edit?usp=sharing)
+
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/fd40f681-292c-4cc5-b703-46f8c9ba4842">
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/a67612fc-487b-4afd-83b3-7c2325cc372e">
