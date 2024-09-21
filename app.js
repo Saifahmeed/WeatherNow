@@ -1,16 +1,16 @@
 const searchBtn = document.getElementById("searchBtn");
 const countryInput = document.getElementById("countryInput");
-const weatherGrid = document.getElementById("weatherGrid");
+const weathergrid = document.getElementById("weathergrid");
 const errorMsg = document.querySelector(".error-msg");
 const compareBtn = document.getElementById("compareBtn");
-const comparisonResults = document.getElementById("comparisonResults");
+const comparisonresults = document.getElementById("comparisonresults");
 const apiKey = "3982ed770020adb14c5d4f367890ae80";
 
 // Function to get weather data for a country or city
 async function getCountryWeather(country) {
   try {
     // Clear previous weather data
-    weatherGrid.innerHTML = "";
+    weathergrid.innerHTML = "";
 
     const result = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apiKey}&units=metric`
@@ -23,15 +23,15 @@ async function getCountryWeather(country) {
     }
 
     hideError();
-    updateWeatherGrid(data);
+    updateWeathergrid(data);
   } catch (error) {
     showError("An unexpected error occurred.");
   }
 }
 
 // Function to update the weather grid with data
-function updateWeatherGrid(data) {
-  weatherGrid.innerHTML += `
+function updateWeathergrid(data) {
+  weathergrid.innerHTML += `
     <div class="weather-card">
       <h3 class="city-name">${data.name}, ${data.sys.country}</h3>
       <div class="weather-icon-container">
@@ -70,7 +70,7 @@ compareBtn.addEventListener("click", async () => {
           1
         );
 
-        comparisonResults.innerHTML = `
+        comparisonresults.innerHTML = `
           <div class="comparison-card">
             <h4>${place1}</h4>
             <p>Temperature: ${Math.round(data1.main.temp)}°C</p>
@@ -128,7 +128,6 @@ function getWeatherIcon(weather) {
 // Function for search button
 searchBtn.addEventListener("click", () => {
   const country = countryInput.value.trim();
-
   if (country) {
     getCountryWeather(country);
   } else {
